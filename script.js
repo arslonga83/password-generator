@@ -4,12 +4,15 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 const btn = document.querySelector('#btn');
 const pw1 = document.querySelector('#pw1');
 const pw2 = document.querySelector('#pw2');
-const toolTip1 = document.querySelector('#tooltip1')
-const toolTip2 = document.querySelector('#tooltip2')
+const toolTip1 = document.querySelector('#tooltip1');
+const toolTip2 = document.querySelector('#tooltip2');
 
+//fill password fields and reset tooltips if needed
 btn.addEventListener('click', () => {
-  pw1.textContent = generatePassword()
-  pw2.textContent = generatePassword()
+  pw1.textContent = generatePassword();
+  pw2.textContent = generatePassword();
+  toolTip1.textContent = 'click to copy to clipboard';
+  toolTip2.textContent = 'click to copy to clipboard';
 });
 
 function generatePassword() {

@@ -45,6 +45,9 @@ hr {
   color: #4ADF86;
   width: 175px;
   height: 1rem;
+}
+
+#pw1, #pw2 {
   cursor: pointer;
 }
 
