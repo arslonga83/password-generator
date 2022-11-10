@@ -19,17 +19,24 @@ body {
   color: #4ADF86;
 }
 
-button {
+#number-input {
+  border-radius: 5px;
+  padding: 5px;
+  border: none;
+}
+
+#btn {
   background: #4ADF86;
   color: #FFFFFF;
   padding: 8px 16px;
   border: 0;
   border-radius: 5px;
+  margin-top: 24px;
 }
 
 hr {
   width: 80%;
-  margin: 48px 0
+  margin: 16px 0
 }
 
 #passwords {

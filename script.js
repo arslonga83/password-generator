@@ -6,6 +6,7 @@ const pw1 = document.querySelector('#pw1');
 const pw2 = document.querySelector('#pw2');
 const toolTip1 = document.querySelector('#tooltip1');
 const toolTip2 = document.querySelector('#tooltip2');
+const numInput = document.querySelector('#number-input')
 
 //fill password fields and reset tooltips if needed
 btn.addEventListener('click', () => {
@@ -17,7 +18,7 @@ btn.addEventListener('click', () => {
 
 function generatePassword() {
   let password = '';
-  for (let i = 0; i < 15; i++) {
+  for (let i = 0; i < numInput.value; i++) {
     let randomIndex = Math.floor(Math.random() * characters.length);
     password += characters[randomIndex];
   }
