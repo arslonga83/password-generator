@@ -10,14 +10,13 @@ body {
   height: 100vh;
 }
 
-#hero1 {
+#hero {
   color: #FFFFFF;
+  margin-bottom: 0;
 }
 
-#hero2 {
+.green {
   color: #4ADF86;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 button {
