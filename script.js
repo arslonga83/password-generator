@@ -18,3 +18,14 @@ function generatePassword() {
   }
   return password;
 }
+
+//click passwords to copy text to clipboard
+pw1.addEventListener('click', () => {
+  navigator.clipboard.writeText(pw1.textContent)
+})
+
+pw2.addEventListener('click', () => {
+  navigator.clipboard.writeText(pw2.textContent)
+})
+
+
