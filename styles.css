@@ -28,6 +28,11 @@ button {
   border-radius: 5px;
 }
 
+hr {
+  width: 500px;
+  margin: 24px 0
+}
+
 #passwords {
   display: flex;
   gap: 48px;
