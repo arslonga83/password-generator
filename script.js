@@ -6,10 +6,15 @@ const pw1 = document.querySelector('#pw1');
 const pw2 = document.querySelector('#pw2');
 
 btn.addEventListener('click', () => {
-  generatePassword()
+  pw1.textContent = generatePassword()
+  pw2.textContent = generatePassword()
 });
 
 function generatePassword() {
-  pw1.textContent = 'click'
-  pw2.textContent = 'click'
+  let password = '';
+  for (let i = 0; i < 15; i++) {
+    let randomIndex = Math.floor(Math.random() * characters.length);
+    password += characters[randomIndex];
+  }
+  return password;
 }
