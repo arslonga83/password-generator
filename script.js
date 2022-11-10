@@ -4,6 +4,8 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 const btn = document.querySelector('#btn');
 const pw1 = document.querySelector('#pw1');
 const pw2 = document.querySelector('#pw2');
+const toolTip1 = document.querySelector('#tooltip1')
+const toolTip2 = document.querySelector('#tooltip2')
 
 btn.addEventListener('click', () => {
   pw1.textContent = generatePassword()
@@ -22,10 +24,12 @@ function generatePassword() {
 //click passwords to copy text to clipboard
 pw1.addEventListener('click', () => {
   navigator.clipboard.writeText(pw1.textContent)
+  toolTip1.textContent = 'Copied!'
 })
 
 pw2.addEventListener('click', () => {
   navigator.clipboard.writeText(pw2.textContent)
+  toolTip2.textContent = 'Copied!'
 })
 
 
