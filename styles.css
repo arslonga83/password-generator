@@ -28,12 +28,13 @@ button {
 }
 
 hr {
-  width: 500px;
+  width: 80%;
   margin: 24px 0
 }
 
 #passwords {
   display: flex;
+  flex-wrap: wrap;
   gap: 48px;
 }
 
@@ -42,6 +43,6 @@ hr {
   border-radius: 5px;
   background: #273549;
   color: #4ADF86;
-  width: 200px;
+  width: 175px;
   height: 1rem;
 }
